@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Activity Logger App</title>
+  <style>
+    html, body {
+      height: auto;
+      min-height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: #a3d9a5;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #1b3a1b;
+      width: 100vw;
+      padding: 50px 0 60px;
+      display: flex;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+
+    .header-container {
+      max-width: 700px;
+      width: 90%;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    header img.logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 2px solid #7bc67e;
+    }
+
+    .header-text {
+      flex-grow: 1;
+    }
+
+    header h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.8rem;
+      color: #a3d9a5;
+    }
+
+    header p {
+      margin: 0 0 20px 0;
+      font-size: 1.2rem;
+      color: #a3d9a5cc;
+      max-width: 450px;
+    }
+
+    a.github-link {
+      display: inline-block;
+      background: #7bc67e;
+      color: #121212;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    a.github-link:hover {
+      background: #5fa25c;
+    }
+
+    section {
+      max-width: 700px;
+      margin: 40px auto 100px; /* More bottom margin */
+      padding: 0 15px;
+      overflow: visible;
+      text-align: left;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+      color: #a3d9a5;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #a3d9a5cc;
+    }
+
+    .features-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .feature-card {
+      background: #1f1f1f;
+      border-radius: 12px;
+      padding: 20px 25px;
+      box-shadow: 0 4px 12px rgba(123, 198, 126, 0.3);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      color: #c9e4c5;
+    }
+
+    .feature-card:hover {
+      box-shadow: 0 8px 20px rgba(123, 198, 126, 0.6);
+      transform: translateY(-5px);
+    }
+
+    .feature-card h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      color: #a3d9a5;
+      font-size: 1.3rem;
+    }
+
+    .feature-card p {
+      color: #c9e4c5cc;
+      font-size: 1rem;
+    }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      margin-top: 60px;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      color: #7bc67e99;
+      text-align: center;
+    }
+
+    footer a {
+      color: #7bc67e;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 750px) {
+      header {
+        padding: 40px 0 40px;
+      }
+
+      .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header h1 {
+        font-size: 2.4rem;
+      }
+
+      header p {
+        max-width: 100%;
+        font-size: 1rem;
+      }
+
+      section {
+        padding: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <img src="logo.png" alt="Activity Logger Logo" class="logo" />
+      <div class="header-text">
+        <h1>Activity Logger</h1>
+        <p>Simple, local activity logging on your mobile device. No accounts needed.</p>
+        <a href="https://github.com/yourgithubusername/activity-logger" class="github-link" target="_blank" rel="noopener noreferrer">
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Features</h2>
+    <div class="features-cards">
+      <div class="feature-card">
+        <h3>Quick Logging</h3>
+        <p>Add activities instantly to stay focused without distractions.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Local Storage</h3>
+        <p>Your data stays private and on-device. No servers. No sync.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Smart Notifications</h3>
+        <p>Receive instant confirmation and reminders after logging.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Clean Interface</h3>
+        <p>Minimal UI built for fast interaction and daily tracking.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>About</h2>
+    <p>
+      Activity Logger is a lightweight Android and iOS app that helps you track what you're doing —
+      whether it's study sessions, cooking, workouts, or breaks.
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Activity Logger </a>
+  </footer>
+
+</body>
+</html>
